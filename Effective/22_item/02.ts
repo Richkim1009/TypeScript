@@ -22,9 +22,11 @@ const memebers2 = ['Janet', 'Michael'].map(
   who => jackson5.find(n => n === who)
 ).filter(who => who !== undefined);
 
+// ************* 타입 가드 *************
 function isDefined<T>(x: T | undefined): x is T {
   return x !== undefined;
-}
+} // x 가 undefined가 아닐때 x 는 T에 부분집합이다 라고 알려주는 역할 
+
 const members = ['Janet', 'Michael'].map(
   who => jackson5.find(n => n === who)
 ).filter(isDefined);
