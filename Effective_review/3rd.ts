@@ -18,3 +18,4 @@
 
 // 반환 값에 명명된 타입 얻어오기
 // ReturnType<typeof function>;
+
